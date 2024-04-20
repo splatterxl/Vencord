@@ -55,6 +55,7 @@ export interface Settings {
     | undefined;
     disableMinSize: boolean;
     winNativeTitleBar: boolean;
+    loadSnippets: boolean;
     plugins: {
         [plugin: string]: {
             enabled: boolean;
@@ -91,6 +92,7 @@ const DefaultSettings: Settings = {
     macosVibrancyStyle: undefined,
     disableMinSize: false,
     winNativeTitleBar: false,
+    loadSnippets: false,
     plugins: {},
 
     notifications: {

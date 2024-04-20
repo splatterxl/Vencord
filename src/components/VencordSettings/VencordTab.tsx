@@ -90,6 +90,11 @@ function VencordSettings() {
                 title: "Disable minimum window size",
                 note: "Requires a full restart"
             },
+            IS_DISCORD_DESKTOP && {
+                key: "loadSnippets",
+                title: "Load DevTools snippets and run them on startup",
+                note: "See the docs for details, requires a full restart"
+            }
         ];
 
     return (

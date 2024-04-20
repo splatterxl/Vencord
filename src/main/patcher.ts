@@ -94,6 +94,7 @@ if (!IS_VANILLA) {
                 }
 
                 process.env.DISCORD_PRELOAD = original;
+                process.env.DISCORD_APP_USER_DATA = app.getPath("userData");
 
                 super(options);
                 initIpc(this);
